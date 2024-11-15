@@ -54,7 +54,7 @@ nav ul li a::after{
     content:'';
     width:0;
     height: 3px;
-    background: #ff004f ;
+    background: #16d0ff ;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -76,7 +76,7 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color:#ff004f;
+    color:#00aaff;
 }
 
 /*------about-------*/
@@ -127,7 +127,7 @@ nav ul li a:hover::after{
     content: "";
     width:0;
     height: 3px;
-    background:#ff004f;
+    background:#00aaff;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -144,7 +144,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color:#b54746;
+    color:#00aaff;
     font-size: 14px;
 }
 
@@ -197,7 +197,7 @@ nav ul li a:hover::after{
 }
 
 .services-list div:hover{
-    background: #ff004f;
+    background: #00aaff;
     transform: translateY(10px);
 }
 
@@ -229,7 +229,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6),#00aaff);
     border-radius:10px ;
     position: absolute;
     left: 0;
@@ -252,7 +252,7 @@ nav ul li a:hover::after{
 
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: #001aff;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -275,7 +275,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border:1px solid #ff004f;
+    border:1px solid #00aaff;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -284,7 +284,7 @@ nav ul li a:hover::after{
 }
 
 .btn:hover{
-    background: #ff004f;
+    background: #9c0c3a;
     
 }
 
@@ -302,7 +302,7 @@ nav ul li a:hover::after{
  }
 
  .contact-left p i{
-    color:#ff004f;
+    color:#179a2b;
     margin-right: 15px;
     font-size: 25px;
  }
@@ -318,7 +318,7 @@ nav ul li a:hover::after{
  }
 
  .social-icons a:hover{
-    color:#ff004f;
+    color:#1166d5;
     transform: translateY(-5px);
  }
 
@@ -359,7 +359,7 @@ nav ul li a:hover::after{
  }
 
  .copyright i{
-    color: #ff004f;
+    color: #00aaff;
  }
 
  /*-------------------------------css for small screen--------------------------*/
@@ -383,7 +383,7 @@ nav ul li a:hover::after{
         font-size: 25px;
      }
      nav ul{
-        background: #ff004f;
+        background: #00aaff;
         position: fixed;
         top:0;
         right: -200px;
