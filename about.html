@@ -37,7 +37,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="tab-contents active-tab" id="education" >
+                <div class="tab-contents" id="education" >
                     <ul>
                         <li><span>2024-2025</span><br />BE- Computer Science (CGPA: 8.5)</li>
                         <li>
@@ -50,5 +50,20 @@
         </div>
     </div>
 </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
 </body>
 </html>

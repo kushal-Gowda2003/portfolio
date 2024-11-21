@@ -19,7 +19,7 @@
                     <li><a href="#header">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
@@ -40,58 +40,7 @@
         </div>
     </div>
 </div>
-    <!------------------Contact---------------->
-    <br></br>
-    <br></br>
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p>
-                     <a href="https://mail.google.com/mail/u/0/#search/ckrgowda8055%40gmail.com"><i class="fa-solid fa-envelope"></i> ckrgowda8055@gmail.com</a>
-                    </p>
-                    <p><i class="fa-solid fa-phone-volume"></i> +91 8310514992</p>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/_.kush.___/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/kushal-gowda-aaba42268/"><i
-                                class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/kushal-Gowda2003"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet" method="post">
-                        <input type="text" name="Name" placeholder="Your Name" required />
-                        <input type="email" name="Email" placeholder="Your Email" required />
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>
-                Copyright &copy;2024 Kushal . All rights reserved.
-            </p>
-        </div>
-    </div>
-
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
+    
 
     <script>
         var sidemeu = document.getElementById("sidemenu");
@@ -101,23 +50,6 @@
         function closemenu() {
             sidemeu.style.right = "-200px";
         }
-    </script>
-
-    <script>
-        const form = document.forms["submit-to-google-sheet"];
-        form.addEventListener("submit", (e) => {
-            e.preventDefault();
-            fetch(
-                "https://script.google.com/macros/s/AKfycby0RG-FrYRCL5Xc9OunLfzynCh6orrRuhW6v8KGH_ipzKZDBakPpu29aqXuKSIzWYiL/exec",
-                {
-                    method: "POST",
-                    body: new FormData(form),
-                }
-            )
-                .then((response) => response.text())
-                .then((text) => console.log(text))
-                .catch((error) => console.error("Error!", error.message));
-        });
     </script>
 </body>
 
